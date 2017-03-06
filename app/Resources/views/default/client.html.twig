@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <ul>
+        <li><a href="{{ path("blague_index") }}">Blagues</a></li>
+        <li><a href="{{ path("categorie_index") }}">Catégories</a></li>
+
+    </ul>
+        <table>
+           
+    {% for blague in blagues %}
+        <tr>
+
+            <td>{{ blague.texte }}</td>
+
+        </tr>
+    {% endfor %}</table>
+{% endblock %}
+
+

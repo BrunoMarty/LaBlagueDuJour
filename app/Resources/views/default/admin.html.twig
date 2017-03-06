@@ -1,0 +1,7 @@
+
+{% block body %}
+    <a href="{{ path("admin") }}">Ajouter</a>
+    {% for bla in blague %}
+        <p>{{bla.categorie.nom}} : {{bla.texte}} </p>
+  {% endfor %}
+{% endblock %}

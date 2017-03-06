@@ -1,0 +1,35 @@
+user:
+    resource: "@UserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
+
+admin_blague:
+    resource: "@AdminBundle/Controller/BlagueController.php"
+    type:     annotation
+
+admin_categorie:
+    resource: "@AdminBundle/Controller/CategorieController.php"
+    type:     annotation
+
+client:
+    resource: "@ClientBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+admin:
+    resource: "@AdminBundle/Controller/"
+    type:     annotation
+    prefix:   /
+    
+login:
+    path: /login
+    defaults:
+        _controller: UserBundle:Security:login
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout
